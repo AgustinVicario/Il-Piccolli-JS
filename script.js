@@ -1,8 +1,11 @@
 //Entrada de datos
-let entrada = prompt("Ingrese su nombre");
-//Salida de datos
-if (entrada == "") {
-  alert("No ingresaste tu nombre");
-} else {
-  alert("Benvenuto al Il Piccoli" + entrada);
+let entrada = prompt("Ingresar un nombre");
+//Repetimos hasta que se ingresa "ESC"
+while (entrada != "ESC") {
+  switch (entrada) {
+    case entrada:
+      alert("Benvenuto al Il Piccoli" + entrada);
+      break;
+  }
+  entrada = prompt("Ingresar un nombre / Escribiendo ESC SE SALE DEL ANUNCIO");
 }
