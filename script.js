@@ -1,9 +1,10 @@
-//Funcion
-function calcularIva() {
-  let precio = parseFloat(prompt("Ingrese el precio del producto"));
-  let precioConIva = precio * 1.21;
-  console.log("El precio con IVA es:" + precioConIva);
-  alert("El precio con IVA es:" + precioConIva);
+function impuesto(precio, porcentaje) {
+  return precio + (precio * porcentaje) / 100;
 }
-
-calcularIva();
+for (let index = 0; index < 5; index++) {
+  let resultado = impuesto(
+    parseFloat(prompt("INGRESAR PRECIO")),
+    parseFloat(prompt("INGRESAR IMPUESTO EN %"))
+  );
+  alert("precio mas impuesto:$" + resultado);
+}
