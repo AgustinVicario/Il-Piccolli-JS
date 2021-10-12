@@ -1,11 +1,9 @@
-//Entrada de datos
-let entrada = prompt("Ingresar un nombre");
-//Repetimos hasta que se ingresa "ESC"
-while (entrada != "ESC") {
-  switch (entrada) {
-    case entrada:
-      alert("Benvenuto al Il Piccoli" + entrada);
-      break;
-  }
-  entrada = prompt("Ingresar un nombre / Escribiendo ESC SE SALE DEL ANUNCIO");
+//Funcion
+function calcularIva() {
+  let precio = parseFloat(prompt("Ingrese el precio del producto"));
+  let precioConIva = precio * 1.21;
+  console.log("El precio con IVA es:" + precioConIva);
+  alert("El precio con IVA es:" + precioConIva);
 }
+
+calcularIva();
