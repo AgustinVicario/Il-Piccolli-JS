@@ -1,10 +1,17 @@
-function impuesto(precio, porcentaje) {
-  return precio + (precio * porcentaje) / 100;
+function ingresarEntrada() {
+  let precio = parseInt(prompt("ingrese precio "));
+  return precio;
 }
-for (let index = 0; index < 5; index++) {
-  let resultado = impuesto(
-    parseFloat(prompt("INGRESAR PRECIO")),
-    parseFloat(prompt("INGRESAR IMPUESTO EN %"))
-  );
-  alert("precio mas impuesto:$" + resultado);
+
+function procesarEntrada(numero) {
+  let iva = numero * 1.21;
+  return iva;
 }
+
+function mostrarSalida(valorFinal) {
+  alert(valorFinal);
+}
+
+let entrada = ingresarEntrada();
+let entradaModificada = procesarEntrada(entrada);
+mostrarSalida(entradaModificada);
