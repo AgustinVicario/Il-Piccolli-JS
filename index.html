@@ -1,14 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculador de IVA</title>
-  </head>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+/>
+<link
+rel="stylesheet"
+href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+crossorigin="anonymous"
+/>
+  <title>Presupuesto de Viaje</title>
+</head>
+<body>
   <body>
-    <h1>Desafío 4: Simulador interactivo</h1>
-    <h2>Calculadora de Precios mas Impuestos</h2>
+
+    <nav class="navbar black z-depth-4">
+      <h2>Presupuesto para tu viaje</h2>
+    </nav>
+    <div class="texto">
+      <p>Rellena el formulario</p>
+    </div>
+    <div class="main">
+      <form id="vacationCalc">
+        <input type="text" placeholder="Ingresa el Destino" id="destino" required />
+        <input
+          type="number"
+          placeholder="Ingresa el valor del Presupuesto"
+          id="presupuesto"
+          required
+        />
+        <input
+          type="number"
+          placeholder="Ingresa el valor del Alojamiento"
+          id="alojamiento"
+          required
+        />
+        <input
+          type="number"
+          placeholder="Ingresa el valor del Transporte "
+          id="transporte"
+          required
+        />
+        <input type="number" placeholder="Ingresa el valor de la comida" id="comida" required />
+        <input
+          type="number"
+          placeholder="Ingresa el valor de Otros gastos"
+          id="otrosgastos"
+          required
+        />
+        <input type="submit" value="Calcular!" class="btn green z-depth-4" />
+      </form>
+    </div>
+    <div class="container">
+      <div class="icons">
+        <h5><i class="fas fa-plane"></i></h5>
+        <h5><i class="fas fa-wallet"></i></h5>
+        <h5><i class="fas fa-money-bill-wave-alt"></i></h5>
+      </div>
+      <div class="data">
+        <div class="result" id="result"></div>
+      </div>
+    </div>
     <script src="script.js"></script>
-  </body>
+</body>
 </html>

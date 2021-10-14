@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/**Fondo**/
+body {
+  background-image: url(/img/fondo.jpg);
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar {
+  margin: -2.3em 0 7em;
+}
+
+.texto {
+  display: flex;
+  color: white;
+  justify-content: center;
+  font-size: 30px;
+  text-decoration: underline;
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+h2 {
+  text-align: center;
+}
+
+.main {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+form {
+  text-align: center;
+  width: 90%;
+  background-color: transparent;
+  padding: 20px;
+  color: #fff;
+  border-radius: 20px;
+}
+form input::placeholder {
+  width: 15em;
+  margin: 3px;
+  height: 2em;
+  color: white;
+}
+
+form input {
+  color: white;
+}
+
+form .btn {
+  margin: 2em 1em;
+  width: 60%;
+  height: 40px;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 2px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+.icons {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1em;
+}
+.fas {
+  font-size: 2.5em;
+  border-radius: 50%;
+  padding: 40px;
+}
+.fa-plane {
+  color: green;
+}
+.fa-wallet {
+  color: white;
+  border-color: black;
+}
+.fa-money-bill-wave-alt {
+  color: red;
+}
+
+.container-data {
+  display: flex;
+  justify-content: space-around;
+  margin-top: -1em;
+}
+
+.container-data h6 {
+  text-align: center;
+}
