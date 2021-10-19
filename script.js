@@ -57,3 +57,36 @@ let destino3 = new Destino(
   prompt("ingrese el valor de otro gastos")
 );
 console.log(destino3);
+
+//Desafio Arrays
+const costoDeViaje = [
+  "Destino",
+  "Presupuesto",
+  "Alojamiento",
+  "Transporte",
+  "Comida",
+  "Otros Gastos",
+];
+
+costoDeViaje.push(prompt("Ingresar item faltante"));
+console.log(costoDeViaje);
+
+for (let i = 0; i < costoDeViaje.length; i++) {
+  console.log(costoDeViaje[i]);
+}
+
+//Desafio Complementario clase 6
+const destino = [
+  { destino: "Buenos Aires", valorTotal: 10000 },
+  { destino: "Estados Unidos", valorTotal: 100000 },
+  { destino: "Italia", valorTotal: 150000 },
+  { destino: "España", valorTotal: 120000 },
+  { destino: "Francia", valorTotal: 180000 },
+  { destino: "Uruguay", valorTotal: 80000 },
+];
+
+const destinoOrden = destino.sort((destino1, destino2) => {
+  return destino1.valorTotal - destino2.valorTotal;
+});
+
+console.log(destinoOrden);
