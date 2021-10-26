@@ -15,14 +15,17 @@ href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
 integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
 crossorigin="anonymous"
 />
+<!-- Titulo -->
   <title>Presupuesto de Viaje</title>
 </head>
 <body>
   <body>
-
     <nav class="navbar black z-depth-4">
-      <h2>Presupuesto para tu viaje</h2>
+      <h3>Presupuesto para tu viaje</h3>
     </nav>
+    <div class="nombre-usuario" id="nombre-usuario">
+      <h2 class="nombre-usuario" id="nombre-usuario"></h2>
+    </div>
     <div class="texto">
       <p>Rellena el formulario</p>
     </div>
@@ -54,7 +57,11 @@ crossorigin="anonymous"
           id="otrosgastos"
           required
         />
-        <input type="submit" value="Calcular!" class="btn green z-depth-4" />
+        <div class="buttons">
+          <input type="reset" value="Limpiar Formulario" class="btn red z-depth-4" />
+          <input type="submit" value="Calcular!" class="btn green z-depth-4" />
+        </div>
+
       </form>
     </div>
     <div class="container">
@@ -67,6 +74,6 @@ crossorigin="anonymous"
         <div class="result" id="result"></div>
       </div>
     </div>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

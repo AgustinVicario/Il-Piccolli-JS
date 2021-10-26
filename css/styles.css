@@ -19,15 +19,32 @@ body {
 
 .texto {
   display: flex;
-  color: white;
   justify-content: center;
+  text-align: center;
+  background: #ccc;
   font-size: 30px;
-  text-decoration: underline;
-  font-size: 30px;
-  text-decoration: underline;
+  text-transform: uppercase;
+  background: linear-gradient(#00a000, white, red);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-h2 {
+title {
+  text-align: center;
+}
+
+.nombre-usuario {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+h3 {
   text-align: center;
 }
 
@@ -59,7 +76,7 @@ form input {
 
 form .btn {
   margin: 2em 1em;
-  width: 60%;
+  width: 75%;
   height: 40px;
   text-transform: uppercase;
   color: #fff;
@@ -68,6 +85,7 @@ form .btn {
   border: none;
   cursor: pointer;
 }
+
 .icons {
   width: 100%;
   display: flex;
