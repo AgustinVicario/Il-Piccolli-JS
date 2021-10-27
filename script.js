@@ -32,4 +32,4 @@ function CalcGastos(e) {
 //DOM
 let saludoUsuario = document.getElementById("nombre-usuario");
 let saludo = prompt("Ingresa su nombre");
-saludoUsuario.innerHTML = "Bienvenido" + " " + saludo;
+saludoUsuario.innerHTML = "Hola" + " " + saludo + "!";
