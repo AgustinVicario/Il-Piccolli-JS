@@ -17,7 +17,6 @@ function CalcGastos(e) {
     parseInt(otrosgastos);
 
   let balance = presupuesto - gastos;
-
   console.log(destino, presupuesto, balance);
 
   console.log(
@@ -29,7 +28,16 @@ function CalcGastos(e) {
     otrosgastos
   );
 }
+
 //DOM
 let saludoUsuario = document.getElementById("nombre-usuario");
 let saludo = prompt("Ingresa su nombre");
 saludoUsuario.innerHTML = "Hola" + " " + saludo + "!";
+
+//EVENTOS
+let boton = document.getElementById("botonReset");
+boton.addEventListener("click", interactuar);
+
+function interactuar() {
+  let reset = alert("Su formulario ha sido limpiado");
+}
