@@ -115,5 +115,16 @@ form .btn {
 }
 
 .container-data h6 {
+  display: flex;
+  justify-content: space-around;
   text-align: center;
+  margin-top: -1em;
+  color: white;
+}
+
+p {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  color: white;
 }

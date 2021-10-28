@@ -18,6 +18,7 @@ function CalcGastos(e) {
 
   let balance = presupuesto - gastos;
   console.log(destino, presupuesto, balance);
+  UI(destino, presupuesto, balance);
 
   console.log(
     destino,
@@ -27,6 +28,25 @@ function CalcGastos(e) {
     comida,
     otrosgastos
   );
+}
+
+function UI(destino, presupuesto, balance) {
+  let resultado = document.getElementById("result");
+  let impresionDatos = document.createElement("div");
+  impresionDatos.innerHTML = `
+    <div class="container-data row">
+      <div class="col s4">
+        <h6>${destino}</h6>
+      </div>
+      <div class="col s4">
+        <h6>${presupuesto}</h6>
+      </div>
+      <div class="col s4">
+        <h6>${balance}</h6>
+      </div>
+    </div>
+    `;
+  resultado.appendChild(impresionDatos);
 }
 
 //DOM
@@ -40,4 +60,5 @@ boton.addEventListener("click", interactuar);
 
 function interactuar() {
   let reset = alert("Su formulario ha sido limpiado");
+  console.log(reset);
 }
