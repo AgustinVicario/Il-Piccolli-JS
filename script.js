@@ -30,7 +30,6 @@ function CalcGastos(e) {
   );
 }
 
-//DOM
 function UI(destino, presupuesto, balance) {
   let resultado = document.getElementById("result");
   let impresionDatos = document.createElement("div");
@@ -50,6 +49,7 @@ function UI(destino, presupuesto, balance) {
   resultado.appendChild(impresionDatos);
 }
 
+//DOM
 let saludoUsuario = document.getElementById("nombre-usuario");
 let saludo = prompt("Ingresa su nombre");
 saludoUsuario.innerHTML = "Hola" + " " + saludo + "!";
