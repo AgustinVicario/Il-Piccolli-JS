@@ -1,14 +1,24 @@
+//Formulario
 let vacationCalc = document.getElementById("vacationCalc");
+//captura de datos del formulario via submit
 vacationCalc.addEventListener("submit", CalcGastos);
 
-function CalcGastos(e) {
-  e.preventDefault();
+function valores() {
   let destino = document.getElementById("destino").value,
     presupuesto = document.getElementById("presupuesto").value,
     alojamiento = document.getElementById("alojamiento").value,
     transporte = document.getElementById("transporte").value,
     comida = document.getElementById("comida").value,
     otrosgastos = document.getElementById("otrosgastos").value;
+
+  return { destino, presupuesto, alojamiento, transporte, comida, otrosgastos };
+}
+
+function CalcGastos(e) {
+  e.preventDefault();
+
+  const { destino, presupuesto, alojamiento, transporte, comida, otrosgastos } =
+    valores();
 
   let gastos =
     parseInt(alojamiento) +
@@ -17,22 +27,15 @@ function CalcGastos(e) {
     parseInt(otrosgastos);
 
   let balance = presupuesto - gastos;
-  console.log(destino, presupuesto, balance);
-  UI(destino, presupuesto, balance);
 
-  console.log(
-    destino,
-    presupuesto,
-    alojamiento,
-    transporte,
-    comida,
-    otrosgastos
-  );
+  UI(destino, presupuesto, balance);
+  console.log(destino, presupuesto, balance);
 }
 
 function UI(destino, presupuesto, balance) {
   let resultado = document.getElementById("result");
   let impresionDatos = document.createElement("div");
+
   impresionDatos.innerHTML = `
     <div class="container-data row">
       <div class="col s4">
@@ -47,12 +50,21 @@ function UI(destino, presupuesto, balance) {
     </div>
     `;
   resultado.appendChild(impresionDatos);
+
+  reset();
+}
+
+function reset() {
+  document.getElementById("vacationCalc").reset();
 }
 
 //DOM
 let saludoUsuario = document.getElementById("nombre-usuario");
 let saludo = prompt("Ingresa su nombre");
-saludoUsuario.innerHTML = "Hola" + " " + saludo + "!";
+saludoUsuario.innerHTML = "Bienvenido" + " " + saludo + "!";
+if (saludo != "" && saludo != null)
+  //LocalStorage
+  localStorage.setItem("nombreUsuario", saludo);
 
 //EVENTOS
 let boton = document.getElementById("botonReset");
