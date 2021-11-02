@@ -58,14 +58,6 @@ function reset() {
   document.getElementById("vacationCalc").reset();
 }
 
-//DOM
-let saludoUsuario = document.getElementById("nombre-usuario");
-let saludo = prompt("Ingresa su nombre");
-saludoUsuario.innerHTML = "Bienvenido" + " " + saludo + "!";
-if (saludo != "" && saludo != null)
-  //LocalStorage
-  localStorage.setItem("nombreUsuario", saludo);
-
 //EVENTOS
 let boton = document.getElementById("botonReset");
 boton.addEventListener("click", interactuar);
