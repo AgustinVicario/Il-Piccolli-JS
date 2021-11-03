@@ -33,39 +33,49 @@ crossorigin="anonymous"
     </div>
     <div class="main">
       <form id="vacationCalc">
+        <label>
         <input type="text" placeholder="Ingresa el Destino" id="destino" required />
+      </label>
+      <label>
         <input
           type="number"
           placeholder="Ingresa el valor del Presupuesto"
           id="presupuesto"
           required
         />
+      </label>
+      <label>
         <input
           type="number"
           placeholder="Ingresa el valor del Alojamiento"
           id="alojamiento"
           required
         />
+      </label>
         <input
           type="number"
           placeholder="Ingresa el valor del Transporte "
           id="transporte"
           required
         />
+        <label>
         <input type="number" placeholder="Ingresa el valor de la comida" id="comida" required />
+      </label>
+      <label>
         <input
           type="number"
           placeholder="Ingresa el valor de Otros gastos"
           id="otrosgastos"
           required
         />
+      </label>
         <div class="buttons">
           <label>
             <input type="reset" value="Limpiar Formulario" class="btn red z-depth-4" id="botonReset"  />
           </label>
           <label>
-            <input type="submit" value="Calcular"
-            id="submit" class="btn green z-depth-4"  />
+            <button type="submit" value="calcular" id="calcular" class="btn green z-depth-4">Calcular
+            </button>            
           </label>
         </div>
       </form>

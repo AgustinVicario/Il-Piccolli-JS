@@ -66,3 +66,11 @@ function interactuar() {
   let reset = alert("Su formulario ha sido limpiado");
   console.log(reset);
 }
+
+//LocalStorage
+let calcular = document.getElementById("calcular");
+calcular.addEventListener("click", guardarLocalStorage);
+function guardarLocalStorage() {
+  const nuevoDestino = JSON.stringify(document.getElementById("destino").value);
+  localStorage.setItem("nuevoDestino", nuevoDestino);
+}
