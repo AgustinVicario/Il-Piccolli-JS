@@ -30,47 +30,8 @@ function CalcGastos(e) {
 
   UI(destino, presupuesto, balance);
   console.log(destino, presupuesto, balance);
-}
-
-function UI(destino, presupuesto, balance) {
-  let resultado = document.getElementById("result");
-  let impresionDatos = document.createElement("div");
-
-  impresionDatos.innerHTML = `
-    <div class="container-data row">
-      <div class="col s4">
-        <h6>${destino}</h6>
-      </div>
-      <div class="col s4">
-        <h6>${presupuesto}</h6>
-      </div>
-      <div class="col s4">
-        <h6>${balance}</h6>
-      </div>
-    </div>
-    `;
-  resultado.appendChild(impresionDatos);
-
   reset();
-}
-
-function reset() {
-  document.getElementById("vacationCalc").reset();
-}
-
-//EVENTOS
-let boton = document.getElementById("botonReset");
-boton.addEventListener("click", interactuar);
-
-function interactuar() {
-  let reset = alert("Su formulario ha sido limpiado");
-  console.log(reset);
-}
-
-//LocalStorage
-let calcular = document.getElementById("calcular");
-calcular.addEventListener("click", guardarLocalStorage);
-function guardarLocalStorage() {
-  const nuevoDestino = JSON.stringify(document.getElementById("destino").value);
-  localStorage.setItem("nuevoDestino", nuevoDestino);
+  function reset() {
+    document.getElementById("vacationCalc").reset();
+  }
 }
