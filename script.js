@@ -1,7 +1,8 @@
 //Formulario
 let vacationCalc = document.getElementById("vacationCalc");
-//captura de datos del formulario via submit
-vacationCalc.addEventListener("submit", CalcGastos);
+//captura de datos del formulario via JQUERY aplicando submit
+//JQUERY
+$(vacationCalc).submit(CalcGastos);
 
 function valores() {
   let destino = document.getElementById("destino").value,

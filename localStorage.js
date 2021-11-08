@@ -3,10 +3,10 @@
 let calcular = document.getElementById("calcular");
 calcular.addEventListener("click", guardarLocalStorage);
 function guardarLocalStorage() {
+  //Nuevo Destino
   const nuevoDestino = JSON.stringify(document.getElementById("destino").value);
   localStorage.setItem("nuevoDestino", nuevoDestino);
-  const nuevoDestino = JSON.stringify(document.getElementById("destino").value);
-  localStorage.setItem("nuevoDestino", nuevoDestino);
+
   //Presupuesto
   const valorPresupuesto = JSON.stringify(
     document.getElementById("presupuesto").value

@@ -2,7 +2,7 @@
 let boton = document.getElementById("botonReset");
 boton.addEventListener("click", interactuar);
 
-//SweetAlert
+//SweetAlert para el boton limpiar formulario
 function interactuar() {
   let reset;
   Swal.fire(
@@ -12,5 +12,3 @@ function interactuar() {
   );
   console.log(reset);
 }
-
-$(".data").prepend('<button id="btnjQuery">CLICK</button>');
