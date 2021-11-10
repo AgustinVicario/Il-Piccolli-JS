@@ -1,0 +1,32 @@
+{
+  "difDestinos": [
+    {
+      "lugar": "Miami",
+      "pais": "Pais: Estados Unidos",
+      "idioma": "Idioma hablado: Ingles",
+      "provincia": "Condado: Miami-Dade",
+      "poblacion": "Poblacion: 441003"
+    },
+    {
+      "lugar": "Nueva York",
+      "pais": "Pais: Estados Unidos",
+      "idioma": "Idioma hablado: Ingles",
+      "provincia": "Estado; Nueva York",
+      "poblacion": "Poblacion: 19453561"
+    },
+    {
+      "lugar": "Mallorca",
+      "pais": "Pais: España",
+      "idioma": "Idioma hablado: Español",
+      "provincia": "Provincia: Malaga",
+      "poblacion": "Poblacion: 147633"
+    },
+    {
+      "lugar": "Positano",
+      "pais": "Pais: Italia",
+      "idioma": "Idioma hablado: Italiano",
+      "provincia": "Provincia: Salerno",
+      "poblacion": "Poblacion: 3862"
+    }
+  ]
+}

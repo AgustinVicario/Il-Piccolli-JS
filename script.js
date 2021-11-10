@@ -36,3 +36,10 @@ function CalcGastos(e) {
     document.getElementById("vacationCalc").reset();
   }
 }
+
+//Animaciones
+//id boton boton
+//id parrafo efc
+$("#boton").click(function () {
+  $("#efc").fadeIn();
+});

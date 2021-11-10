@@ -5,25 +5,28 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
+
   <link
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
 />
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+<!-- se utiliza este scrip para lo iconos de social media -->
+  <script
+      src="https://kit.fontawesome.com/83ab592238.js"
+      crossorigin="anonymous">
+  </script>
 <!-- Titulo -->
   <title>Presupuesto de Viaje</title>
 </head>
 <body>
   <body>
-    <nav class="navbar black z-depth-4">
-      <h3>Presupuesto para tu viaje</h3>
-    </nav>
-    <div class="texto">
-      <p>HOLA!</p>
-    </div>
-    <div class="texto">
-      <p>Rellena el formulario</p>
-    </div>
+    <header class="header">
+      <div class="texto">
+        <h2>Presupuesto para tu viaje</h2>
+      </div>
+    </header>
+    <main>
     <div class="main">
       <form id="vacationCalc">
         <label>
@@ -92,14 +95,47 @@
         <div class="result" id="result"></div>
       </div>
     </div>
+  </main>
+      <!-- Footer con social media -->
+      <footer>
+        <a class="pagina" href="destinos.html">Haz click aqui conocer diferentes destinos!</a>
+        <div class="redes-container">
+          <ul>
+            <li>
+              <a href="#" aria-label="facebook" target="_blank" rel="noopener" class="facebook">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="twitter" target="_blank" rel="noopener" class="twitter">
+                <i class="fab fa-twitter-square"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="instagram" target="_blank" rel="noopener" class="instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="whatsapp" target="_blank" rel="noopener" class="whatsapp">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </li>
+          </ul>  
+        </div>
+        <div class="textofooter">
+          Copyright © 2021 Agustin Vicario
+        </div>
+      </footer>
         <!-- JQuery -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <!-- Sweet Alert -->
         <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="script.js"></script>
-    <script src="eventos.js"></script>
-    <script src="dom.js"></script>
-    <script src="localStorage.js"></script>
     <script src="constructor.js"></script>
+    <script src="destinos.js"></script>
+    <script src="dom.js"></script>
+    <script src="eventos.js"></script>
+    <script src="localStorage.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
