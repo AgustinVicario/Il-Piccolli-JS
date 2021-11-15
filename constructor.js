@@ -1,3 +1,4 @@
+//Constructor
 class Destino {
   constructor(
     destino,

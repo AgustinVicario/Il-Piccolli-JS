@@ -1,3 +1,4 @@
+//Implementacion del DOM en el HTML
 function UI(destino, presupuesto, balance) {
   let resultado = document.getElementById("result");
   let impresionDatos = document.createElement("div");

@@ -4,6 +4,7 @@ let vacationCalc = document.getElementById("vacationCalc");
 //JQUERY
 $(vacationCalc).submit(CalcGastos);
 
+//Funciones
 function valores() {
   let destino = document.getElementById("destino").value,
     presupuesto = document.getElementById("presupuesto").value,
@@ -36,10 +37,3 @@ function CalcGastos(e) {
     document.getElementById("vacationCalc").reset();
   }
 }
-
-//Animaciones
-//id boton boton
-//id parrafo efc
-$("#boton").click(function () {
-  $("#efc").fadeIn();
-});

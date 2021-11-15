@@ -1,5 +1,4 @@
 //GETJSON
-
 const URLJSON = "destinos.json";
 $("#destinos").prepend('<button id="boton">Destino y datos</button>');
 $("#boton").click(() => {
