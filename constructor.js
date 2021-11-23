@@ -44,3 +44,8 @@ class Destino {
     );
   }
 }
+
+let destino1 = new Destino("Buenos Aires", "1000", 500, 1500, 650, 500);
+destino1.mostrar();
+let destino2 = new Destino("Miami", 800, 1500, 1000, 800, 200);
+destino2.mostrar();
